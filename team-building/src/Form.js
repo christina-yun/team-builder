@@ -15,8 +15,8 @@ function Form(props){
     }
 
     return (
-        <form>
-            <div className='form-group inputs' onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
+            <div className='form-group inputs' >
                 <label> Name
                     <input
                     type='text'
@@ -48,7 +48,7 @@ function Form(props){
                 </label>
 
                 <div className='submit'>
-                    <button>Submit</button>
+                    <button>Not Submit</button>
                 </div>    
             </div>
         </form>
